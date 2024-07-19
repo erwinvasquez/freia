@@ -1,0 +1,34 @@
+/* responsive.css */
+
+/* Estilos específicos para pantallas menores a 800px */
+@media (max-width: 800px) {
+    /* Mostrar el botón de menú (hamburguesa) en pantallas pequeñas */
+    .menu-toggle {
+        display: block;
+        z-index: 1000; /* Asegúrate de que el botón esté sobre otros elementos */
+        /* posicionamos el botón en la parte superior izquierda */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* Estilos para el menú drawer */
+    .menu {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: -350px; /* Mover el menú fuera de la pantalla */
+        background: #fff;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        flex-direction: column; /* Colocar elementos en una columna */
+        align-items: flex-start;
+        transition: left 0.3s ease;
+        z-index: 1001;
+    }
+
+    /* Mostrar el menú cuando está abierto */
+    .menu.open {
+        left: 0; /* Mover el menú a la vista */
+    }
+}

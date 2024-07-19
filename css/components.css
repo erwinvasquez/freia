@@ -1,0 +1,100 @@
+/* components.css */
+
+/* Estilos para componentes reutilizables */
+
+/* Estilos para el menú */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Asegura que los elementos del menú estén centrados verticalmente */
+    padding: 0 20px;
+    flex: 1;
+}
+
+/* Estilos para los enlaces del menú */
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    padding: 10px;
+    background-color: transparent; 
+}
+
+/* Contenedor de la derecha en el encabezado */
+.right-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Estilos para los iconos de perfil y carrito */
+.profile-icon img {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-icon img:hover {
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño del icono */ 
+}
+
+/* Contenedor para el selector de idioma */
+.lang-container {
+    position: relative;
+}
+
+/* Estilos para las imágenes de las banderas en el selector de idioma */
+.lang-container img {
+    cursor: pointer;
+    width: 24px; /* Ajusta el tamaño del icono de la bandera */
+    height: auto;
+}
+
+/* Estilos para la lista desplegable del selector de idioma */
+.lang-container ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilos para los elementos de la lista desplegable del selector de idioma */
+.lang-container ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Estilos para las imágenes de las banderas en la lista desplegable */
+.lang-container ul li img {
+    width: 24px; /* Ajusta el tamaño del icono de la bandera */
+    height: auto;
+    margin-right: 5px;
+}
+
+/* Estilos para los elementos de la lista desplegable cuando se pasa el ratón por encima */
+.lang-container ul li:hover {
+    background: #f0f0f0;
+}
+
+/* Mostrar la lista desplegable al hacer clic */
+.lang-container.show ul {
+    display: block;
+}
+
+/* Estilos para el botón de menú (hamburguesa) - oculto por defecto */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+

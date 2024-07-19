@@ -1,0 +1,36 @@
+/* transitions.css */
+
+/* Transición para el cambio de color de fondo de las opciones del menú */
+.menu a {
+    position: relative; /* Necesario para posicionar la línea deslizante */
+    display: inline-block; /* Necesario para la línea deslizante */
+    transition: background-color 0.5s ease;
+}
+
+.menu a:hover {
+    background-color: #f0f0f0; /* Cambia a un color de fondo deseado al pasar el ratón sobre una opción del menú */
+}
+
+/* Efecto de línea deslizante */
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Ajusta esta distancia según sea necesario */
+    left: 0;
+    width: 0;
+    height: 2px; /* Altura de la línea */
+    background-color: #d4af37; /* Color de la línea */
+    transition: width 0.5s ease;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+.menu a:not(:hover)::before {
+    transition: none;
+    width: 0;
+}
+
+
+/* Tr

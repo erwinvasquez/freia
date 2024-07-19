@@ -1,0 +1,102 @@
+/* about_us.css */
+
+.about-us-section {
+    display: flex;
+    flex-direction: row;
+    height: 100%;  /* Altura fija para el contenedor */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necesario para los pseudo-elementos */
+}
+
+.image-container img {
+    max-width: 60%;
+    max-height: 60%;
+    /*max-height: 350px;  /* Limitar la altura máxima de la imagen */
+    border-radius: 10px;
+    position: relative; /* Para que la imagen esté encima de los pseudo-elementos */
+    z-index: 1;
+    align-items: center;
+}
+
+/* Pseudo-elementos para las figuras doradas */
+.image-container::before,
+.image-container::after {
+    content: '';
+    position: absolute;
+    z-index: 0; /* Detrás de la imagen */
+}
+
+.image-container::before {
+    width: 280px;
+    height: 450px;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.7;
+    border: 4px solid #d4af37; /* Borde dorado */
+    /*left: 50%; /* Posiciona en el centro horizontalmente */
+    transform: translateX(-40px); /* Mueve 50% hacia la izquierda desde el centro y luego 10px más a la izquierda */
+    box-sizing: border-box; /* Para incluir el borde dentro de las dimensiones */
+    align-items: center;
+
+}
+
+.image-container::after {
+    width: 300px;
+    height: 410px;
+    transform: translate(50px, 50px); /* Mueve 50px hacia la derecha y 50px hacia abajo */
+    opacity: 0.7;
+    background: #d4af37; /* Color dorado */
+    align-items: center;
+
+}
+
+
+
+
+.text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content {
+    text-align: left;
+    line-height: 1.6;
+    top: 10;
+}
+
+
+
+
+
+
+
+
+
+/* Clases para animaciones */
+
+.image-container.animate img {
+    animation: fadeIn 2s ease-out;
+}
+
+.image-container.animate::before {
+    animation: fadeInLeft 1s ease-out;
+}
+
+.image-container.animate::after {
+    animation: fadeInRight 1.5s ease-out;
+}
+
+
+
+
+

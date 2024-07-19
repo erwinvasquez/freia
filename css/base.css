@@ -1,0 +1,24 @@
+/* base.css */
+
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Definimos el ancho maximo que tendran las paginas del sitio, el menu quedara sobre todo el ancho de la pantalla*/
+.page-container {
+    width: 100%;
+    overflow: auto;
+    max-width: 1400px; /* Define el ancho máximo deseado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    position: relative; /* Necesario para manejar la superposición */
+    z-index: 2; /* Asegura que el contenido esté por encima del fondo */
+}
+
+

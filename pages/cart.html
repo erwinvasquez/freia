@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Perfumes Freia</title>
+    <!-- Referencias a los archivos CSS separados -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/transitions.css">  
+    <link rel="stylesheet" href="../css/fonts.css"> <!-- Incluir fonts.css -->
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <button class="menu-toggle">&#9776;</button>
+            <nav class="menu"></nav>   
+            <div class="right-container">
+                <a href="../pages/my_account.html" class="profile-icon">
+                    <img src="../images/icons/account.png" alt="Profile" />
+                </a>
+                <a href="../pages/cart.html" class="profile-icon">
+                    <img src="../images/icons/cart.png" alt="Cart" />
+                </a>
+                <div class="lang-container">
+                    <img id="current-lang" src="../images/icons/flag-en.png" alt="Current Language" />
+                    <ul id="lang-select">
+                        <li data-lang="en"><img src="../images/icons/flag-en.png" alt="English" /> English</li>
+                        <li data-lang="es"><img src="../images/icons/flag-es.png" alt="Español" /> Español</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <h1 data-i18n="cart_title">Services</h1>
+        <p data-i18n="cart_content">This is the Services page.</p>
+    </main>
+
+    <footer data-i18n="footer_content" class="page-container">
+        Footer Content
+    </footer>
+
+    <script type="module" src="../js/main.js"></script> <!-- Usar type="module" -->
+</body>
+</html>

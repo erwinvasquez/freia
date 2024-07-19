@@ -1,0 +1,123 @@
+/* animations.css */
+
+/* Definición de la animación Fade In Up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Definición de la animación Fade In Left */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(0); /* Ajuste inicial */
+    }
+    100% {
+        opacity: 0.7;
+        transform: translateX(-40px); /* Posición final */
+    }
+}
+
+/* Definición de la animación Fade In Right */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0); /* Posición inicial */
+    }
+    100% {
+        opacity: 0.7;
+        
+        transform: translate(50px, 50px); /* Ajuste final */
+    }
+}
+
+/* Definición de la animación Fade In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Definición de la animación de los titulos */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+/* Clases para aplicar las animaciones */
+.fade-in-up.animate {
+    animation: fadeInUp 2s ease-out;
+}
+
+.fade-in-left.animate {
+    animation: fadeInLeft 1s ease-out;
+}
+
+.fade-in-right.animate {
+    animation: fadeInRight 1.5s ease-out;
+}
+
+.fade-in.animate {
+    animation: fadeIn 2s ease-out;
+}
+
+.tracking-in-expand.animate {
+    -webkit-animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation-delay: 1s; /* Agregar un delay de 0.5 segundos */
+    opacity: 1;            
+}
+
+
+
+
+
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 800px) {
+    .about-us-container {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    }
+    .title-container {
+        padding: 10px 0;
+    }
+}
+
+
+
+

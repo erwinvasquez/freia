@@ -1,0 +1,83 @@
+/* layout.css */
+
+/* Estilos de estructura y disposición */
+
+/* Estilos para el encabezado */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0px;
+    height: 70px;
+}
+
+/* Contenedor del menú dentro del encabezado */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1400px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Contenedor para el manejo de los titulos de secciones y paginas */
+.title-container {
+    position: relative;
+    top: 1px;
+    left: 50%;
+    z-index: 1000; /* Asegúrate de que la marca de agua esté por encima de todo el contenido */
+    pointer-events: none; /* Esto asegura que la marca de agua no interfiera con los clics en el contenido */
+}
+
+
+
+/* Estilos para el contenedor principal */
+main {
+    min-height: 100vh; /* Asegura que main tenga al menos la altura de la ventana */
+    overflow-y: auto; /* Controla el desplazamiento vertical */
+}
+
+
+
+/* Estilos para las secciones */
+.section {
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilos para las secciones dentro del contenedor principal */
+.section {
+    width: 100%;
+}
+
+
+
+/* Estilo para el footer */
+.footer {
+    height: 350px;
+    background-color: #333;
+    color: white; /* Si deseas que el texto sea blanco para contrastar con el fondo negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+

@@ -1,0 +1,31 @@
+{
+    "sections": [
+        {
+            "id": "home",
+            "name": "Home"
+        },
+        {
+            "id": "promotions",
+            "name": "Promotions"
+        },
+        {
+            "id": "reviews",
+            "name": "Reviews"
+        },
+        {
+            "id": "about_us",
+            "name": "About Us"
+        },
+        {
+            "id": "contact",
+            "name": "Contact"
+        }
+    ],
+    "pages": [
+        {
+            "url": "pages/products.html",
+            "name": "Products"
+        }
+    ]
+}
+

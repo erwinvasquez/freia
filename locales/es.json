@@ -1,0 +1,30 @@
+{
+    "home": "Inicio",
+    "about_us": "Sobre Nosotros",
+    "promotions": "Promociones",
+    "reviews": "Reseñas",
+    "contact": "Contacto",
+    "My Account": "Mi Cuenta",
+    "Products": "Productos",
+    "Services": "Servicios",
+    "Cart": "Carro",
+    "lang_select": "Idioma",
+    "home_title": "Freia",
+    "home_content": "Contenido de la Sección Inicio",
+    "about_us_title": "Sobre Nosotros",
+    "about_us_content": "Contenido de la Sección Sobre Nosotros",
+    "promotions_content": "Contenido de la Sección Promociones",
+    "reviews_content": "Contenido de la Sección Reseñas",
+    "contact_content": "Contenido de la Sección Contacto",
+    "footer_content": "Contenido del Pie de Página",
+    "my_account_title": "Mi Cuenta",
+    "my_account_content": "Esta es la página de Mi Cuenta.",
+    "products_title": "Productos",
+    "products_content": "Contenido de la Sección Productos",
+    "services_title": "Servicios",
+    "services_content": "Contenido de la Sección Servicios",
+    "cart_title": "Carro",
+    "cart_content": "Contenido de la Sección Carro"
+}
+
+
